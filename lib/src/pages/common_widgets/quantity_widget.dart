@@ -35,7 +35,6 @@ class QuantityWidget extends StatelessWidget {
             color: Colors.grey,
             onPressed: () {
               if (value == 1) return;
-
               int resultCount = value - 1;
               result(resultCount);
             },
