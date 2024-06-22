@@ -45,10 +45,15 @@ class SignUpScreen extends StatelessWidget {
 
                   //Formulário
                   Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 40),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 32,
+                      vertical: 40,
+                    ),
                     decoration: const BoxDecoration(
                       color: Colors.white,
-                      borderRadius: BorderRadius.vertical(top: Radius.circular(45)),
+                      borderRadius: BorderRadius.vertical(
+                        top: Radius.circular(45),
+                      ),
                     ),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -80,7 +85,6 @@ class SignUpScreen extends StatelessWidget {
                           height: 50,
                           child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                              backgroundColor: Colors.lightGreen,
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(18),
                               ),
@@ -88,7 +92,7 @@ class SignUpScreen extends StatelessWidget {
                             onPressed: () {},
                             child: const Text(
                               'Cadastrar usuário',
-                              style: TextStyle(color: Colors.white, fontSize: 18),
+                              style: TextStyle(fontSize: 18),
                             ),
                           ),
                         ),

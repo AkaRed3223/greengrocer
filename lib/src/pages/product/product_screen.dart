@@ -112,7 +112,6 @@ class _ProductScreenState extends State<ProductScreen> {
                         height: 55,
                         child: ElevatedButton.icon(
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: Colors.lightGreen,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(15),
                             ),

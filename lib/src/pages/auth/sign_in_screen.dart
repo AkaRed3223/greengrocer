@@ -29,7 +29,9 @@ class SignInScreen extends StatelessWidget {
                     //Nome do app
                     Text.rich(
                       TextSpan(
-                        style: const TextStyle(fontSize: 40),
+                        style: const TextStyle(
+                          fontSize: 40,
+                        ),
                         children: [
                           const TextSpan(
                             text: 'Green',
@@ -52,7 +54,10 @@ class SignInScreen extends StatelessWidget {
                     SizedBox(
                       height: 30,
                       child: DefaultTextStyle(
-                        style: const TextStyle(fontSize: 25, color: Colors.white),
+                        style: const TextStyle(
+                          fontSize: 25,
+                          color: Colors.white,
+                        ),
                         child: AnimatedTextKit(
                           pause: Duration.zero,
                           repeatForever: true,
@@ -73,7 +78,10 @@ class SignInScreen extends StatelessWidget {
 
               //Bloco inferior
               Container(
-                padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 60),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 32,
+                  vertical: 60,
+                ),
                 decoration: const BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.vertical(
@@ -103,17 +111,20 @@ class SignInScreen extends StatelessWidget {
                       height: 50,
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.lightGreen,
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(18),
+                          ),
                         ),
                         onPressed: () {
-                          Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (c) {
-                            return const BaseScreen();
-                          }));
+                          Navigator.of(context).pushReplacement(
+                            MaterialPageRoute(builder: (c) {
+                              return const BaseScreen();
+                            }),
+                          );
                         },
                         child: const Text(
                           'Entrar',
-                          style: TextStyle(color: Colors.white, fontSize: 18),
+                          style: TextStyle(fontSize: 18),
                         ),
                       ),
                     ),
@@ -162,7 +173,9 @@ class SignInScreen extends StatelessWidget {
                       height: 50,
                       child: OutlinedButton(
                         style: OutlinedButton.styleFrom(
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(18),
+                          ),
                           side: const BorderSide(width: 2, color: Colors.green),
                         ),
                         onPressed: () {
