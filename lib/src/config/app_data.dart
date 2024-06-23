@@ -1,5 +1,6 @@
 import 'package:greengrocer/src/models/cart_item_model.dart';
 import 'package:greengrocer/src/models/item_model.dart';
+import 'package:greengrocer/src/models/user_model.dart';
 
 ItemModel apple = ItemModel(
   description:
@@ -65,6 +66,14 @@ List<ItemModel> items = [
   papaya,
 ];
 
+List<String> categories = [
+  'Frutas',
+  'Grãos',
+  'Verduras',
+  'Temperos',
+  'Cereais',
+];
+
 //Lista de itens do carrinho
 List<CartItemModel> cartItems = [
   CartItemModel(
@@ -81,10 +90,10 @@ List<CartItemModel> cartItems = [
   ),
 ];
 
-List<String> categories = [
-  'Frutas',
-  'Grãos',
-  'Verduras',
-  'Temperos',
-  'Cereais',
-];
+UserModel user = UserModel(
+  name: 'Cesinha',
+  email: 'cesarsales22@gmail.com',
+  phone: '(11) 98360-4792',
+  cpf: '111.222.333-44',
+  password: 'quem olhar é corno',
+);
